@@ -5,7 +5,7 @@ project(video-to-sound CXX)
 find_package(OpenCV REQUIRED)
 find_package(portaudio REQUIRED)
 
-add_executable(video-to-sound src/main.cpp src/compute.cu)
+add_executable(video-to-sound src/main.cpp)
 target_link_libraries(video-to-sound ${OpenCV_LIBS})
 target_link_libraries(video-to-sound portaudio)
 
